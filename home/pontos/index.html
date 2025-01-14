@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos - Furia CS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="container_rodape">
+                <h1><a href="/home/index.html">
+                    <img src="/imagens/Logo.png" alt="Logo do Meu Site">
+                    </a>
+                   </h1>
+                <ul>
+                    <li><a href="/home/index.html">Início</a></li>
+                    <li><a href="/home/sobre/index.html">Sobre</a></li>
+                     <li><a href="https://wa.me/41995058652" target="_blank">Contato</a></li>
+                     <li><a href="/home/live/index.html">Live</a></li>
+                      <li><a href="/home/pontos/index.html">Pontos</a></li>
+                </ul>
+                <div class="login-container">
+                     <a href="/login" class="login-link">Login</a>
+                     <a href="/cadastro" class="register-link">Cadastro</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pontos-main">
+       <section class="pontos-header">
+        <div class="container">
+             <h2>Seus Pontos</h2>
+            <p>Veja seus pontos e como você pode usá-los!</p>
+            <div id="user-points" class="user-points">
+                 <span id="current-points">0</span> Pontos
+            </div>
+         </div>
+      </section>
+
+      <section class="pontos-shop">
+        <div class="container">
+          <h3>O que você pode comprar?</h3>
+             <div class="shop-grid">
+                <div class="shop-item" data-item-id="1" data-item-points="100">
+                    <h4>Figurinha</h4>
+                     <img src="/imagens/fig1.jpg" alt="Figurinha 1">
+                     <p>Custo: 100 Pontos</p>
+                    <button class="btn buy-item">Comprar</button>
+                 </div>
+                <div class="shop-item" data-item-id="2" data-item-points="200">
+                   <h4>Fonte Exclusiva</h4>
+                    <img src="/imagens/font1.jpg" alt="Fonte Exclusiva 1">
+                   <p>Custo: 200 Pontos</p>
+                  <button class="btn buy-item">Comprar</button>
+                 </div>
+                <div class="shop-item" data-item-id="3" data-item-points="300">
+                    <h4>Criar Fonte Personalizada</h4>
+                    <img src="/imagens/font2.jpg" alt="Criar Fonte Personalizada 1">
+                   <p>Custo: 300 Pontos</p>
+                    <button class="btn buy-item">Comprar</button>
+                 </div>
+                <div class="shop-item" data-item-id="4" data-item-points="500">
+                  <h4>Fã Prêmio CS Furia</h4>
+                     <img src="/imagens/pre1.jpg" alt="Fã Prêmio CS Furia 1">
+                    <p>Custo: 500 Pontos</p>
+                    <button class="btn buy-item">Comprar</button>
+                  </div>
+                 <div class="shop-item" data-item-id="5" data-item-points="100">
+                      <h4>Ficha para Concorrer a Prêmios</h4>
+                       <img src="/imagens/ficha1.jpg" alt="Ficha para Concorrer a Prêmios 1">
+                      <p>Custo: 100 Pontos</p>
+                     <button class="btn buy-item">Comprar</button>
+                 </div>
+             </div>
+          </div>
+       </section>
+
+       <section class="pontos-history">
+          <div class="container">
+               <h3>Histórico de Pontos</h3>
+                <div id="points-history" class="points-history">
+                     <!-- Histórico de pontos será adicionado aqui via JavaScript -->
+                    <p>Nenhum histórico de pontos disponível no momento.</p>
+              </div>
+          </div>
+       </section>
+    </main>
+
+     <footer>
+         <div class="container">
+             <p>© 2025 Kel & Jon. Todos os direitos reservados.</p>
+         </div>
+     </footer>
+    <script src="script.js"></script>
+</body>
+</html>

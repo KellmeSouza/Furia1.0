@@ -94,6 +94,16 @@ nav a:hover {
 .hero .btn {
     margin-top: 20px;  /* Espaçamento entre o vídeo e o botão */
 }
+/* Hero Section sobre */
+.hero-sobre {
+    background-color: #222;
+    padding: 2em 0;
+    text-align: center;
+}
+.hero-sobre h2 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
 
 /* Content Section */
 .content {
