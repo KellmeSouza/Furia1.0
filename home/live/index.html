@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live - Furia CS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+          <nav>
+             <div class="container_rodape">
+                 <h1><a href="/home/index.html">
+                      <img src="/imagens/Logo.png" alt="Logo do Meu Site">
+                    </a>
+                  </h1>
+                 <ul>
+                      <li><a href="/home/index.html">Início</a></li>
+                      <li><a href="/home/sobre/index.html">Sobre</a></li>
+                      <li><a href="https://wa.me/41995058652" target="_blank">Contato</a></li>
+                       <li><a href="/home/live/index.html">Live</a></li>
+                </ul>
+                 <div class="login-container">
+                     <a href="/login" class="login-link">Login</a>
+                     <a href="/cadastro" class="register-link">Cadastro</a>
+                  </div>
+             </div>
+          </nav>
+     </header>
+
+    <main>
+        <section class="live-section">
+           <div class="container">
+               <h2>Lives</h2>
+               <div id="live-content">
+                   <!-- Vídeos de Lives serão inseridos aqui -->
+                 <div class="live-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/live_stream" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                     </iframe>
+                 </div>
+                  <div class="live-video">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/live_stream2" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                     </iframe>
+                 </div>
+               </div>
+              <div id="comment-section" class="comment-section">
+                  <h3>Comentários</h3>
+                    <div id="comment-area" class="comment-area">
+                        <!-- Comentários serão inseridos aqui -->
+                         <p class="comment">Faça login para comentar.</p>
+                      </div>
+                     <textarea id="comment-input" placeholder="Digite seu comentário..." disabled></textarea>
+                     <button id="send-comment-btn" class="btn" disabled>Enviar Comentário</button>
+             </div>
+            </div>
+      </section>
+    </main>
+
+     <footer>
+         <div class="container">
+             <p>© 2025 Kel & Jon. Todos os direitos reservados.</p>
+         </div>
+     </footer>
+    <script src="script.js"></script>
+</body>
+</html>

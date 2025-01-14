@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furia CS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="container_rodape">
+                <h1><a href="/home/index.html">
+                    <img src="/imagens/Logo.png" alt="Logo do Meu Site">
+                    </a>
+                   </h1>
+                <ul>
+                    <li><a href="/home/index.html">Início</a></li>
+                    <li><a href="/home/sobre/index.html">Sobre</a></li>
+                    <li><a href="https://wa.me/41995058652" target="_blank">Contato</a></li>
+                    <li><a href="/home/live/index.html">Live</a></li> 
+                </ul>
+                <div class="login-container">
+                    <a href="/login" class="login-link">Login</a>
+                    <a href="/cadastro" class="register-link">Cadastro</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Bem-vindo a FuriaCS!</h2>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/Lr3JuCxv50s" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                 gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <a href="/login" class="btn">Login</a>
+            </div>
+        </section>
+
+          <!-- Modal de Login (oculto por padrão) -->
+        <div id="loginModal" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2>Login</h2>
+            <form action="/login" method="post">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="password">Senha:</label>
+              <input type="password" id="password" name="password" required>
+              <button type="submit" class="btn">Entrar</button>
+              <a href="/esqueci-senha">Esqueci minha senha</a>
+            </form>
+          </div>
+        </div>
+        <!-- Modal de Cadastro (oculto por padrão) -->
+         <div id="cadastroModal" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2>Cadastro</h2>
+            <form action="/cadastro" method="post">
+              <label for="new-email">Email:</label>
+              <input type="email" id="new-email" name="email" required>
+              <label for="new-password">Senha:</label>
+              <input type="password" id="new-password" name="password" required>
+               <label for="new-password2">Confirme sua senha:</label>
+              <input type="password" id="new-password2" name="password2" required>
+              <button type="submit" class="btn">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+            <!-- Modal de "Esqueci minha Senha" (oculto por padrão) -->
+         <div id="resetPasswordModal" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2>Recuperar Senha</h2>
+             <form action="/esqueci-senha" method="post">
+              <label for="reset-email">Email:</label>
+              <input type="email" id="reset-email" name="email" required>
+              <button type="submit" class="btn">Enviar Email</button>
+            </form>
+          </div>
+        </div>
+
+
+        <section class="content">
+            <div class="container">
+                <h3>Conteúdo Principal</h3>
+                <p>Aqui você pode adicionar conteúdo relevante sobre o seu site.</p>
+                <h3>Mais Conteúdo</h3>
+                <p>Exemplo de texto para adicionar uma nova área do site.</p>
+                <h3>Exemplo</h3>
+                <p>Um exemplo de outra seção com conteúdo.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Kel & Jon. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

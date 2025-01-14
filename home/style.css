@@ -1,0 +1,338 @@
+/* style.css */
+
+/* Reset de Estilos e Estilos Globais */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Containers */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que a lista quebre a linha se precisar */
+}
+
+
+nav a {
+    color: #fff;
+    transition: color 0.3s;
+    white-space: nowrap; /* Impede que os links quebrem a linha */
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+.login-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #222;
+    padding: 4em 0;
+    text-align: center;
+}
+.hero h2 {
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+.hero p{
+    margin-bottom: 20px;
+}
+/* Estilo para o iframe do vídeo */
+.hero iframe {
+    display: block;
+    margin: 20px auto;  /* Margem superior e inferior e centraliza horizontalmente */
+    max-width: 100%; /* Garante que o vídeo não ultrapasse seu container */
+}
+
+ /* Estilo para o botão */
+.hero .btn {
+    margin-top: 20px;  /* Espaçamento entre o vídeo e o botão */
+}
+
+/* Content Section */
+.content {
+    padding: 3rem 0;
+}
+.content h3 {
+    color: #ffd700;
+    border-bottom: 1px solid #ffd700;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6be00;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Ajustes para Responsividade (Telas Menores) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav h1 {
+        margin-bottom: 10px; /* Reduz o espaço abaixo do título */
+       font-size: 1.5em;
+    }
+
+    nav ul {
+      flex-direction: row; /* Menu horizontal em telas pequenas */
+       gap: 8px;
+        justify-content: center; /* Links centralizados */
+        margin-bottom: 10px;
+
+
+    }
+
+    nav a {
+      font-size: 0.9em; /* Reduz o tamanho da fonte dos links*/
+    }
+   .login-container {
+    flex-direction: column;
+    align-items: center;
+   }
+}
+
+/* Modais */
+.modal {
+    display: none; /* Começam ocultos */
+    position: fixed; /* Ficam fixos na tela */
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Possibilita scroll se o conteúdo for muito longo */
+    background-color: rgba(0,0,0,0.4); /* Fundo escuro semi-transparente */
+}
+
+.modal-content {
+    background-color: #222;
+    margin: 15% auto; /* Centraliza vertical e horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Tamanho máximo */
+    max-width: 500px; /* Tamanho máximo em telas maiores */
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-modal {
+    color: #fff;
+    float: right; /* Alinha à direita */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Estilo para os labels e inputs dos formularios*/
+.modal-content label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.modal-content input{
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.modal-content button {
+    display: block;
+    margin: 10px auto; /* Centraliza o botão */
+}
+/* Footer Container */
+.container_rodape {
+    width: 90%; /* Largura em telas menores */
+  max-width: 1200px; /* Largura máxima em telas grandes */
+  margin: 0 auto; /* Centraliza na horizontal */
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que a lista quebre a linha se precisar */
+}
+
+
+.container_rodape ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que a lista quebre a linha se precisar */
+}
+
+.container_rodape a {
+    color: #fff;
+    transition: color 0.3s;
+    white-space: nowrap; /* Impede que os links quebrem a linha */
+}
+
+.container_rodape a:hover {
+    color: #ffd700;
+}
+/* Ajustes para Responsividade (Telas Menores) no footer */
+@media (max-width: 768px) {
+    .container_rodape {
+        width: 95%;
+    }
+
+    .container_rodape  {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container_rodape  h1 {
+        margin-bottom: 10px;
+       font-size: 1.5em;
+    }
+
+    .container_rodape ul {
+      flex-direction: row;
+       gap: 8px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+   .container_rodape  a {
+        font-size: 0.9em;
+    }
+    .container_rodape .login-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Sobre Seção */
+.sobre-secao{
+   padding: 3rem 0;
+}
+.sobre-secao h3 {
+    color: #ffd700;
+    border-bottom: 1px solid #ffd700;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Linha do Tempo */
+.timeline {
+    padding: 20px 0;
+}
+.timeline-item {
+    margin-bottom: 20px;
+}
+.timeline-item h4 {
+    color: #ffd700; /* Títulos em dourado */
+    margin-bottom: 0.5em;
+}
+
+/* Equipe */
+.team {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os membros quebrem a linha se necessário */
+    gap: 20px; /* Espaço entre os membros */
+}
+.team-member {
+  flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Alinha o texto no centro do membro */
+}
+.team-member img{
+    max-width: 150px; /* Define o tamanho da imagem dos membros da equipe */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Ajustes para Responsividade do Time em Telas Menores */
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column; /* Os membros ficam na vertical em telas menores */
+         align-items: center;
+
+    }
+    .team-member {
+         flex: auto;
+    }
+}
+
+ /* Estilo para imagem do cabeçalho */
+ header nav h1 a img {
+     max-width: 40px; /* Define a largura máxima da imagem */
+      height: auto; /* Mantém a proporção da imagem */
+     display: block; /* Remove espaços adicionais abaixo da imagem */
+   }
